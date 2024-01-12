@@ -4,7 +4,7 @@ Repavingers adalah proyek yang bertujuan untuk menghubungkan pabrik paving denga
 
 ## Pengguna Login
 | Email | Password | | Job |
-|---|---|---|---|
+|---|---|---|
 | admin1@email.com | password_admin1 | Admin |
 | pabrik1@email.com | password1 | Pabrik |
 | komunitas1@email.com | password_komunitas1 | Komunitas |
