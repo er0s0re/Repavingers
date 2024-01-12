@@ -3,7 +3,7 @@
 Repavingers adalah proyek yang bertujuan untuk menghubungkan pabrik paving dengan penjual sampah. Proyek ini akan memudahkan pabrik paving untuk mendapatkan sampah yang mereka butuhkan untuk membuat paving, dan juga akan memudahkan penjual sampah untuk menjual sampah mereka.
 
 ## Pengguna Login
-| Email | Password | | Job |
+| Email | Password | Job |
 |---|---|---|
 | admin1@email.com | password_admin1 | Admin |
 | pabrik1@email.com | password1 | Pabrik |
