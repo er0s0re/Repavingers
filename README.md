@@ -1,8 +1,8 @@
 # Repavingers
 
-Repavingers adalah proyek yang bertujuan untuk menghubungkan pabrik paving dengan penjual sampah. Proyek ini akan memudahkan pabrik paving untuk mendapatkan sampah yang mereka butuhkan untuk membuat paving, dan juga akan memudahkan penjual sampah untuk menjual sampah mereka.
+Repavingers is a project that aims to connect paving factories with waste sellers. This project will make it easier for paving factories to get the waste they need to make paving, and will also make it easier for waste sellers to sell their waste.
 
-## Pengguna Login
+## User Login
 | Email | Password | Job |
 |---|---|---|
 | admin1@email.com | password_admin1 | Admin |
@@ -14,70 +14,70 @@ Repavingers adalah proyek yang bertujuan untuk menghubungkan pabrik paving denga
 
 Hackclusive
 
-| Nama | Email |
+| Name | Email |
 |---|---|
 | Salsabila Safirana Wibisono | salsaswibisono@gmail.com |
 | Eros Alfedo Hermanto | tioncarna843@gmail.com |
 | Insanu Sholeh Jum Gunawan | insanusan12@gmail.com |
 
-## Tujuan
+## Objectives
 
-Tujuan dari proyek Repavingers adalah untuk:
+The aim of the Repavingers project is to:
 
-* Memudahkan pabrik paving untuk mendapatkan sampah yang mereka butuhkan untuk membuat paving.
-* Memudahkan penjual sampah untuk menjual sampah mereka.
-* Mengurangi jumlah sampah yang dibuang ke TPA.
-* Meningkatkan kualitas lingkungan.
+* Make it easier for paving factories to get the waste they need to make paving.
+* Make it easier for waste sellers to sell their waste.
+* Reduce the amount of waste that goes to landfill.
+* Improve the quality of the environment.
 
-## Manfaat
+## Benefits
 
-Proyek Repavingers akan memberikan manfaat bagi berbagai pihak, antara lain:
+The Repavers project will provide benefits to various parties, including:
 
-* Pabrik paving akan mendapatkan sampah yang mereka butuhkan untuk membuat paving dengan harga yang lebih murah.
-* Penjual sampah akan mendapatkan pasar untuk menjual sampah mereka.
-* Pemerintah akan mengurangi biaya pengelolaan sampah.
-* Masyarakat akan mendapatkan lingkungan yang lebih bersih dan sehat.
+* Paving factories will get the waste they need to make paving at a cheaper price.
+* Waste sellers will get a market to sell their waste.
+* The government will reduce the cost of waste management.
+* People will get a cleaner and healthier environment.
 
 
-## _Screenshot_ Aplikasi
+## Application _Screenshots_
 
-Berikut adalah beberapa contoh _screenshot_ aplikasi Repavingers:
+Here are some examples of Repavingers app screenshots:
 
-* **Halaman Regiter:**
+* **Register Page:**
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/Register.png?raw=true)
 
-  * **Halaman Login:**
+* **Login Page:**
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/Login.png?raw=true)
 
-* **Halaman Main Dashboard semua pengguna:**
+* **Main Dashboard page of all users:**
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/main%20dashboard.png?raw=true)
 
-* **Halaman formulir kebutuhan sampah:**
+* **Waste requirement form page:**
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/Kebutuhan%20sampah.png?raw=true)
 
-* **Halaman verifikasi kebutuhan sampah:**
+* **Waste requirement verification page:**
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/verifikasi%20kebutuhan%20sampah.png?raw=true)
 
-* **Halaman penjualan sampah:**
+* **Garbage sales page:**
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/form_penjualan.png?raw=true)
 
-* **Halaman verifikasi penjualan sampah:**
+* **Waste sale verification page:**
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/verifikasi%20penjualan%20sampah.png?raw=true)
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/verifikasi%20penjualan%20sampah%20detail.png?raw=true)
 
-* **Halaman laporan penjualan sampah:**
+* **Waste sales report page:**
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/Laporan%20Penjualan%20Sampah.png?raw=true)
 
 
-## Kesimpulan
+## Conclusion
 
-Proyek Repavingers adalah proyek yang memiliki potensi untuk memberikan manfaat yang besar bagi berbagai pihak. Proyek ini akan memudahkan pabrik paving untuk mendapatkan sampah yang mereka butuhkan, memudahkan penjual sampah untuk menjual sampah mereka, mengurangi jumlah sampah yang dibuang ke TPA, dan meningkatkan kualitas lingkungan.
+The Repavingers project is a project that has the potential to provide great benefits to various parties. It will make it easier for paving factories to get the waste they need, make it easier for waste sellers to sell their waste, reduce the amount of waste going to landfill, and improve environmental quality.
