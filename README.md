@@ -45,33 +45,33 @@ Here are some examples of Repavingers app screenshots:
 
 * **Register Page:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/Register.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/Register.png?raw=true)
 
 * **Login Page:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/Login.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/Login.png?raw=true)
 
 * **Main Dashboard page of all users:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/main%20dashboard.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/main%20dashboard.png?raw=true)
 
 * **Waste requirement form page:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/Kebutuhan%20sampah.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/Kebutuhan%20sampah.png?raw=true)
 
 * **Waste requirement verification page:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/verifikasi%20kebutuhan%20sampah.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/verifikasi%20kebutuhan%20sampah.png?raw=true)
 
 * **Garbage sales page:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/form_penjualan.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/form_penjualan.png?raw=true)
 
 * **Waste sale verification page:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/verifikasi%20penjualan%20sampah.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/verifikasi%20penjualan%20sampah.png?raw=true)
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/verifikasi%20penjualan%20sampah%20detail.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/verifikasi%20penjualan%20sampah%20detail.png?raw=true)
 
 * **Waste sales report page:**
 
