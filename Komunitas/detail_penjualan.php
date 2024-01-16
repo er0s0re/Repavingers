@@ -14,7 +14,8 @@ require_once "../koneksi.php";
 $id_penjualan = isset($_GET['id_penjualan']) ? $_GET['id_penjualan'] : die('ID Penjualan tidak ditemukan.');
 
 // Query untuk mengambil data penjualan_sampah dan penjual_sampah berdasarkan ID penjualan
-$query = "SELECT penjualan_sampah.*, penjual_sampah.nama_penjual FROM penjualan_sampah
+$query = "SELECT penjualan_sampah.*, penjual_sampah.nama_penjual, penjual_sampah.latitude, penjual_sampah.longitude 
+          FROM penjualan_sampah
           JOIN penjual_sampah ON penjualan_sampah.id_penjual = penjual_sampah.id_penjual
           WHERE penjualan_sampah.id_penjualan = $id_penjualan";
 
@@ -52,7 +53,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo '<div class="alert alert-danger" role="alert">Gagal mengupdate status penjualan.</div>';
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -63,6 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Penjualan Sampah</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Include Google Maps API script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0AF8_ulU9b6sFPjwZhUNtm9pN_owjWUU"></script>
 </head>
 
 <body>
@@ -103,6 +105,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             ?>
         </div>
 
+        <!-- Tampilkan peta -->
+        <div id="map" style="height: 400px;"></div>
+
         <!-- Tombol Disetujui dan Ditolak -->
         <?php if ($status_penjualan == 'menunggu verifikasi') : ?>
             <form method="post" class="mt-4">
@@ -114,6 +119,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Fungsi untuk menginisialisasi peta
+        function initMap() {
+            // Mendapatkan koordinat dari PHP
+            var latitude = <?php echo $rowPenjual['latitude']; ?>;
+            var longitude = <?php echo $rowPenjual['longitude']; ?>;
+
+            // Membuat objek LatLng
+            var myLatLng = new google.maps.LatLng(latitude, longitude);
+
+            // Membuat objek peta
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 15
+            });
+
+            // Menambahkan penanda pada peta
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: '<?php echo $rowPenjual['nama_penjual']; ?>'
+            });
+        }
+
+        // Memanggil fungsi inisialisasi peta setelah halaman dimuat
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
 </body>
 
 </html>
