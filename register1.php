@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])) {
-    require_once "koneksi.php"; // Ubah ini sesuai dengan file koneksi Anda
+    require_once "koneksi.php"; // Include your database connection file
 
     $nama = $_POST["nama"];
     $alamat = $_POST["alamat"];
@@ -26,6 +26,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])) {
     $query = "INSERT INTO penjual_sampah (nama_penjual, alamat_penjual, email_penjual, telepon_penjual, password_penjual) VALUES ('$nama', '$alamat', '$email', '$telepon', '$password')";
 
     if (mysqli_query($koneksi, $query)) {
+        // Fetch latitude and longitude using Google Geocoding API
+        $geocodeUrl = "https://maps.googleapis.com/maps/api/geocode/json?address=" . urlencode($alamat) . "&key=AIzaSyD0AF8_ulU9b6sFPjwZhUNtm9pN_owjWUU";
+        $geocodeResponse = file_get_contents($geocodeUrl);
+        $geocodeData = json_decode($geocodeResponse);
+
+        // Extract latitude and longitude
+        $latitude = $geocodeData->results[0]->geometry->location->lat;
+        $longitude = $geocodeData->results[0]->geometry->location->lng;
+
+        // Update the database with latitude and longitude
+        $updateQuery = "UPDATE penjual_sampah SET latitude='$latitude', longitude='$longitude' WHERE email_penjual='$email'";
+        mysqli_query($koneksi, $updateQuery);
+
         // Registrasi berhasil, arahkan pengguna ke halaman login
         header("Location: index.php");
         exit();

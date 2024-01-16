@@ -50,6 +50,18 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Include Google Places API script -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0AF8_ulU9b6sFPjwZhUNtm9pN_owjWUU&libraries=places"></script>
+  <script>
+    // Initialize the Google Places Autocomplete
+    function initializeAutocomplete() {
+      var input = document.getElementById('alamat');
+      var autocomplete = new google.maps.places.Autocomplete(input);
+    }
+
+    // Trigger autocomplete initialization when the page loads
+    google.maps.event.addDomListener(window, 'load', initializeAutocomplete);
+  </script>
 </body>
 
 </html>
