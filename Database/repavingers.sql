@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 12, 2024 at 01:56 PM
+-- Generation Time: Jan 18, 2024 at 11:59 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -65,8 +65,8 @@ CREATE TABLE `kebutuhan_sampah` (
 INSERT INTO `kebutuhan_sampah` (`id_kebutuhan`, `id_pabrik`, `jenis_sampah`, `jumlah_sampah`, `satuan_sampah`, `tanggal_kebutuhan`, `status_kebutuhan`) VALUES
 (1, 1, 'Plastik', 100, 'kg', '2023-01-01', 'disetujui'),
 (2, 2, 'Kertas', 50, 'kg', '2023-01-02', 'disetujui'),
-(3, 1, 'Besi', 200, 'kg', '2023-01-03', 'disetujui'),
-(5, 1, 'masyarakat', 100, 'kg', '2024-01-12', 'ditolak');
+(15, 1, 'Plastik', 20, 'ton', '2024-04-19', 'disetujui'),
+(17, 3, 'Plastik', 100, 'ton', '2024-04-18', 'menunggu verifikasi');
 
 -- --------------------------------------------------------
 
@@ -100,15 +100,17 @@ CREATE TABLE `laporan_penjualan_sampah` (
   `id_pabrik` int(11) NOT NULL,
   `id_penjualan` int(11) NOT NULL,
   `tanggal_laporan` date NOT NULL,
-  `total_penjualan` int(11) NOT NULL
+  `total_penjualan` int(11) NOT NULL,
+  `satuan_sampah` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `laporan_penjualan_sampah`
 --
 
-INSERT INTO `laporan_penjualan_sampah` (`id_laporan`, `id_pabrik`, `id_penjualan`, `tanggal_laporan`, `total_penjualan`) VALUES
-(3, 1, 5, '2024-01-12', 10);
+INSERT INTO `laporan_penjualan_sampah` (`id_laporan`, `id_pabrik`, `id_penjualan`, `tanggal_laporan`, `total_penjualan`, `satuan_sampah`) VALUES
+(4, 1, 14, '2024-01-17', 5, NULL),
+(5, 1, 15, '2024-01-18', 2, NULL);
 
 -- --------------------------------------------------------
 
@@ -131,7 +133,8 @@ CREATE TABLE `pabrik_paving` (
 
 INSERT INTO `pabrik_paving` (`id_pabrik`, `nama_pabrik`, `alamat_pabrik`, `email_pabrik`, `telepon_pabrik`, `password_pabrik`) VALUES
 (1, 'Pabrik Paving 1', 'Jl. Raya 1', 'pabrik1@email.com', '021-1234567', 'password1'),
-(2, 'Pabrik Paving 2', 'Jl. Raya 2', 'pabrik2@email.com', '021-2345678', 'password2');
+(2, 'Pabrik Paving 2', 'Jl. Raya 2', 'pabrik2@email.com', '021-2345678', 'password2'),
+(3, 'pabrik paving 3', 'jl maju mundur', 'pabrik3@gmail.com', '086321321', '1');
 
 -- --------------------------------------------------------
 
@@ -155,9 +158,9 @@ CREATE TABLE `penjualan_sampah` (
 --
 
 INSERT INTO `penjualan_sampah` (`id_penjualan`, `id_penjual`, `id_kebutuhan`, `jumlah_sampah`, `satuan_sampah`, `tanggal_penjualan`, `status_penjualan`, `foto_sampah`) VALUES
-(2, 2, 2, 25, 'kg', '2023-01-05', 'disetujui', 'foto_sampah2.jpg'),
-(5, 1, 3, 10, 'kg', '2024-01-30', 'disetujui', ''),
-(6, 1, 2, 2, 'kg', '2024-01-19', 'menunggu verifikasi', '');
+(14, 5, 2, 5, 'kg', '2024-01-17', 'disetujui', '1705472217Sampah.png'),
+(15, 5, 15, 2, 'kg', '2024-01-19', 'ditolak', '1705546031Sampah.png'),
+(16, 6, 15, 4, 'kg', '2024-01-19', 'menunggu verifikasi', '1705566605Sampah.jpg');
 
 -- --------------------------------------------------------
 
@@ -171,18 +174,22 @@ CREATE TABLE `penjual_sampah` (
   `alamat_penjual` varchar(255) NOT NULL,
   `email_penjual` varchar(255) NOT NULL,
   `telepon_penjual` varchar(255) NOT NULL,
-  `password_penjual` varchar(255) NOT NULL
+  `password_penjual` varchar(255) NOT NULL,
+  `latitude` double DEFAULT NULL,
+  `longitude` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `penjual_sampah`
 --
 
-INSERT INTO `penjual_sampah` (`id_penjual`, `nama_penjual`, `alamat_penjual`, `email_penjual`, `telepon_penjual`, `password_penjual`) VALUES
-(1, 'Penjual Sampah 1', 'Jalan Prof. Hamka, Ngaliyan, Kota Semarang 50185, Jawa Tengah, Indonesia', 'penjual1@email.com', '021-3456789', 'password3'),
-(2, 'Penjual Sampah 2', 'Jl. Raya 4', 'penjual2@email.com', '021-4567890', 'password4'),
-(3, 'Penjual Sampah 3', 'Jl. Raya 5', 'penjual3@email.com', '021-5678901', 'password5'),
-(4, 'Odin', 'Jl.Kebelakang', 'odin432@gmail.com', '08776326432', '1');
+INSERT INTO `penjual_sampah` (`id_penjual`, `nama_penjual`, `alamat_penjual`, `email_penjual`, `telepon_penjual`, `password_penjual`, `latitude`, `longitude`) VALUES
+(1, 'Penjual Sampah 1', 'Jalan Prof. Hamka, Ngaliyan, Kota Semarang 50185, Jawa Tengah, Indonesia', 'penjual1@email.com', '021-3456789', 'password3', NULL, NULL),
+(2, 'Penjual Sampah 2', 'Jl. Raya 4', 'penjual2@email.com', '021-4567890', 'password4', NULL, NULL),
+(3, 'Penjual Sampah 3', 'Jl. Raya 5', 'penjual3@email.com', '021-5678901', 'password5', NULL, NULL),
+(4, 'Odin', 'Jl.Kebelakang', 'odin432@gmail.com', '08776326432', '1', NULL, NULL),
+(5, 'apollo', 'Jalan Prof. Hamka, Tambakaji, Semarang City, Central Java, Indonesia', 'apollo@gmail.com', '0876232131', '1', -6.9931911, 110.351244),
+(6, 'Jamet', 'Jalan Banyumanik Raya Barat 1, Banyumanik, Semarang City, Central Java, Indonesia', 'jamet1@gmail.com', '081231234', '1', -7.0780509, 110.4076004);
 
 --
 -- Indexes for dumped tables
@@ -249,7 +256,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `kebutuhan_sampah`
 --
 ALTER TABLE `kebutuhan_sampah`
-  MODIFY `id_kebutuhan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_kebutuhan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `komunitas`
@@ -261,25 +268,25 @@ ALTER TABLE `komunitas`
 -- AUTO_INCREMENT for table `laporan_penjualan_sampah`
 --
 ALTER TABLE `laporan_penjualan_sampah`
-  MODIFY `id_laporan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_laporan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `pabrik_paving`
 --
 ALTER TABLE `pabrik_paving`
-  MODIFY `id_pabrik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pabrik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `penjualan_sampah`
 --
 ALTER TABLE `penjualan_sampah`
-  MODIFY `id_penjualan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_penjualan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `penjual_sampah`
 --
 ALTER TABLE `penjual_sampah`
-  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_penjual` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
