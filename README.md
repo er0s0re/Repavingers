@@ -1,6 +1,6 @@
 # Repavingers
 
-Repavingers is a project that aims to connect paving factories with waste sellers. This project will make it easier for paving factories to get the waste they need to make paving, and will also make it easier for waste sellers to sell their waste.
+Repavingers is a web-based application with several users: the public as sellers of plastic waste, environmental care communities in every city in Indonesia as distributors to paving producers, and paving producers as buyers and manufacturers of paving. Each party concerned has collaborated with Repavingers.
 
 ## User Login
 | Email | Password | Job |
@@ -20,14 +20,14 @@ Hackclusive
 | Eros Alfedo Hermanto | tioncarna843@gmail.com |
 | Insanu Sholeh Jum Gunawan | insanusan12@gmail.com |
 
-## Objectives
+## GOALS
 
-The aim of the Repavingers project is to:
+The goal of the Repavingers project is to:
 
-* Make it easier for paving factories to get the waste they need to make paving.
-* Make it easier for waste sellers to sell their waste.
-* Reduce the amount of waste that goes to landfill.
-* Improve the quality of the environment.
+* Reduce plastic waste by creating a web-based Repavingers application, with one of its features being the buying and selling of plastic waste.
+* Campaign to invite the public to be aware of the problem of plastic waste, the quantity of which is increasingly uncontrollable.
+* Campaign to switch from conventional paving to Repavingers, with an invitation to buy paving at store X (Repavingers partner).
+* Partnership with the public, environmental care communities, and paving producers.
 
 ## Benefits
 
@@ -37,6 +37,7 @@ The Repavers project will provide benefits to various parties, including:
 * Waste sellers will get a market to sell their waste.
 * The government will reduce the cost of waste management.
 * People will get a cleaner and healthier environment.
+
 
 
 ## Application _Screenshots_
