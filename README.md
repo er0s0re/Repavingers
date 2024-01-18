@@ -75,7 +75,7 @@ Here are some examples of Repavingers app screenshots:
 
 * **Waste sales report page:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/Laporan%20Penjualan%20Sampah.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/Laporan%20Penjualan%20Sampah.png?raw=true)
 
 
 ## Conclusion
