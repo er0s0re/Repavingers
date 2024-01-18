@@ -38,7 +38,22 @@ The Repavers project will provide benefits to various parties, including:
 * The government will reduce the cost of waste management.
 * People will get a cleaner and healthier environment.
 
+## How to Install
 
+1. Download the Zip above or you can use git
+2. Extract the zip file into the htdocs folder in the C:\xampp directory.
+3. Make sure the extracted folder name is "Repavinger" (location: C:\xampp\htdocs\Repavinger).
+4. Open XAMPP, enable the Apache, MySQL, and FileZilla modules.
+5. Open a browser, enter the URL http://localhost/phpmyadmin/.
+6. Create a new database with the name "repavingers".
+7. Select the "repavingers" database and click "Import".
+8. Select the file "repavingers.sql" in the db folder within the extracted Repavingers folder.
+9. Click "Import".
+
+## How to use
+
+1. Open a browser and access: localhost/repavinger
+2. Run the program by logging in as user or admin or community and factory.
 
 ## Application _Screenshots_
 
