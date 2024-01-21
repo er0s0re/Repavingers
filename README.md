@@ -55,6 +55,10 @@ The Repavers project will provide benefits to various parties, including:
 1. Open a browser and access: localhost/repavinger
 2. Run the program by logging in as user or admin or community and factory.
 
+## Structure Database
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/Structure%20Database.png?raw=true)
+
 ## Application _Screenshots_
 
 Here are some examples of Repavingers app screenshots:
