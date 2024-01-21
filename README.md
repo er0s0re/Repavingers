@@ -66,6 +66,8 @@ Here are some examples of Repavingers app screenshots:
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/Register.png?raw=true)
 
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/register.gif?raw=true)
+
 * **Login Page:**
 
 ![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/login.png?raw=true)
