@@ -1,6 +1,6 @@
 # Repavingers
 
-Repavingers is a project that aims to connect paving factories with waste sellers. This project will make it easier for paving factories to get the waste they need to make paving, and will also make it easier for waste sellers to sell their waste.
+Repavingers is a web-based application with several users: the public as sellers of plastic waste, environmental care communities in every city in Indonesia as distributors to paving producers, and paving producers as buyers and manufacturers of paving. Each party concerned has collaborated with Repavingers.
 
 ## User Login
 | Email | Password | Job |
@@ -20,14 +20,14 @@ Hackclusive
 | Eros Alfedo Hermanto | tioncarna843@gmail.com |
 | Insanu Sholeh Jum Gunawan | insanusan12@gmail.com |
 
-## Objectives
+## GOALS
 
-The aim of the Repavingers project is to:
+The goal of the Repavingers project is to:
 
-* Make it easier for paving factories to get the waste they need to make paving.
-* Make it easier for waste sellers to sell their waste.
-* Reduce the amount of waste that goes to landfill.
-* Improve the quality of the environment.
+* Reduce plastic waste by creating a web-based Repavingers application, with one of its features being the buying and selling of plastic waste.
+* Campaign to invite the public to be aware of the problem of plastic waste, the quantity of which is increasingly uncontrollable.
+* Campaign to switch from conventional paving to Repavingers, with an invitation to buy paving at store X (Repavingers partner).
+* Partnership with the public, environmental care communities, and paving producers.
 
 ## Benefits
 
@@ -38,44 +38,105 @@ The Repavers project will provide benefits to various parties, including:
 * The government will reduce the cost of waste management.
 * People will get a cleaner and healthier environment.
 
+## How to Install
+
+1. Download the Zip above or you can use git
+2. Extract the zip file into the htdocs folder in the C:\xampp directory.
+3. Make sure the extracted folder name is "Repavinger" (location: C:\xampp\htdocs\Repavinger).
+4. Open XAMPP, enable the Apache, MySQL, and FileZilla modules.
+5. Open a browser, enter the URL http://localhost/phpmyadmin/.
+6. Create a new database with the name "repavingers".
+7. Select the "repavingers" database and click "Import".
+8. Select the file "repavingers.sql" in the db folder within the extracted Repavingers folder.
+9. Click "Import".
+
+## How to use
+
+1. Open a browser and access: localhost/repavinger
+2. Run the program by logging in as user or admin or community and factory.
 
 ## Application _Screenshots_
 
 Here are some examples of Repavingers app screenshots:
+* **Landing Page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/landing%20page.png?raw=true)
 
 * **Register Page:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/Register.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/Register.png?raw=true)
 
 * **Login Page:**
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/Login.png?raw=true)
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/login.png?raw=true)
 
-* **Main Dashboard page of all users:**
+### Factory
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/main%20dashboard.png?raw=true)
+* **Home page:**
 
-* **Waste requirement form page:**
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/factory/Home.png?raw=true)
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/Kebutuhan%20sampah.png?raw=true)
+* **Order Form page:**
 
-* **Waste requirement verification page:**
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/factory/order.png?raw=true)
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/verifikasi%20kebutuhan%20sampah.png?raw=true)
+* **Report page:**
 
-* **Garbage sales page:**
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/factory/report.png?raw=true)
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/form_penjualan.png?raw=true)
+* **Profile page:**
 
-* **Waste sale verification page:**
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/factory/profile.png?raw=true)
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/verifikasi%20penjualan%20sampah.png?raw=true)
+### Admin
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/verifikasi%20penjualan%20sampah%20detail.png?raw=true)
+* **Home page:**
 
-* **Waste sales report page:**
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/admin/Home.png?raw=true)
 
-![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/Laporan%20Penjualan%20Sampah.png?raw=true)
+* **Verification page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/admin/verification.png?raw=true)
+
+* **Profile page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/admin/profile.png?raw=true)
+
+### User
+
+* **Home page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/user/home.png?raw=true)
+
+* **Sales Form page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/user/sales%20form.png?raw=true)
+
+* **Report page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/user/report.png?raw=true)
+
+* **Profile page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/user/profile.png?raw=true)
+
+### Community
+
+* **Home page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/community/Home.png?raw=true)
+
+* **Verification page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/community/verification.png?raw=true)
+
+* **Verification detail page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/community/verification_detail.png?raw=true)
+
+* **Profile page:**
+
+![alt text](https://github.com/er0s0re/Repavingers/blob/main/image/screenshoot/community/profile.png?raw=true)
 
 
 ## Conclusion
