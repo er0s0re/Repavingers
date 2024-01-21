@@ -126,7 +126,7 @@
   <script src="assets/js/corporate-ui-dashboard.min.js?v=1.0.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Include Google Places API script -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0AF8_ulU9b6sFPjwZhUNtm9pN_owjWUU&libraries=places"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_GMAPS&libraries=places"></script>
   <script>
     // Initialize the Google Places Autocomplete
     function initializeAutocomplete() {

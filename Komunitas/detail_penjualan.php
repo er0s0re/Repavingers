@@ -730,7 +730,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0AF8_ulU9b6sFPjwZhUNtm9pN_owjWUU&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_GMAPS&callback=initMap"
         async defer></script>
     <script>
     // Fungsi untuk menginisialisasi peta

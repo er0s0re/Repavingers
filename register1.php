@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"])) {
 
     if (mysqli_query($koneksi, $query)) {
         // Fetch latitude and longitude using Google Geocoding API
-        $geocodeUrl = "https://maps.googleapis.com/maps/api/geocode/json?address=" . urlencode($alamat) . "&key=AIzaSyD0AF8_ulU9b6sFPjwZhUNtm9pN_owjWUU";
+        $geocodeUrl = "https://maps.googleapis.com/maps/api/geocode/json?address=" . urlencode($alamat) . "&key=YOUR_API_KEY_GMAPS";
         $geocodeResponse = file_get_contents($geocodeUrl);
         $geocodeData = json_decode($geocodeResponse);
 
